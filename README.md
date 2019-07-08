@@ -43,6 +43,7 @@ Configuring Connections in Apache -airflow
 In apache airflow here you have to configure connections for google cloud storage, google analytics, and snowflake.
 
 1.Go To
+
 ![](images/airflow%20connection.png)
 
 Here you go connections.
