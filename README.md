@@ -65,7 +65,7 @@ If you want to add your own customized dags into the container you can use the f
     $: docker cp   sample_dag.py container_tag:/root/airflow/dags/
 
 
-#Snowflake
+# Snowflake
 
 1. First login into snowflake account, then change the role to ACCOUNTADMIN. Please find an image for your reference.
 ![](images/snowflake_role_change.png)
@@ -76,6 +76,7 @@ If you want to add your own customized dags into the container you can use the f
         create storage integration <integration_object_name> type = external_stage storage_provider = gcs enabled = true storage_allowed_locations = ('*')
 
 Please find an image for your reference:
+
 ![](images/snowflake_query_execution.png)
 
 
