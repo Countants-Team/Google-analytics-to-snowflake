@@ -43,21 +43,20 @@ Configuring Connections in Apache -airflow
 In apache airflow here you have to configure connections for google cloud storage, google analytics, and snowflake.
 
 1.Go To
-![Screenshot](/home/pradeep/Google-analytics-to-snowflake/images/airflow connection.png)
-
+![](images/airflow%20connection.png)
 
 Here you go connections.
 
 2.You will see many connections on the list. Scroll down and select google_cloud_default.
-![Screenshot](/home/pradeep/Google-analytics-to-snowflake/images/google_cloud_default.png)
+![](images/google_cloud_default.png)
 
 
 3.Create a new connection for google cloud analytics connection.
-![Screenshot](/home/pradeep/Google-analytics-to-snowflake/images/google analytics connection.png)
+![](images/google%20analytics%20connection.png)
 
 
 4.Create a new connection for a snowflake.
-![Screenshot](/home/pradeep/Google-analytics-to-snowflake/images/snowflake.png)
+![](images/snowflake.png)
 
 
 If you want to add your own customized dags into the container you can use the following command.
@@ -68,8 +67,7 @@ If you want to add your own customized dags into the container you can use the f
 #Snowflake
 
 1. First login into snowflake account, then change the role to ACCOUNTADMIN. Please find an image for your reference.
-
-![Screenshot](/home/pradeep/Google-analytics-to-snowflake/images/snowflake_role_change.png)
+![](images/snowflake_role_change.png)
 
 
 2. First create storage integration objects using below command:
@@ -77,7 +75,7 @@ If you want to add your own customized dags into the container you can use the f
         create storage integration <integration_object_name> type = external_stage storage_provider = gcs enabled = true storage_allowed_locations = ('*')
 
 Please find an image for your reference:
-![Screenshot](/home/pradeep/Google-analytics-to-snowflake/images/snowflake_query_execution.png)
+![](images/snowflake_query_execution.png)
 
 
 3. Get information about gcs2sftwo integration object
@@ -86,7 +84,7 @@ Please find an image for your reference:
 	
 We are getting one service account for this integration. We have to give “storage admin”  permission for this service account in GCP IAM. Please find an image for your reference.
 
-![Screenshot](/home/pradeep/Google-analytics-to-snowflake/images/snowflake_serviceaccount.png)
+![](images/snowflake_serviceaccount.png)
 
 4. Create a new table using the below command:
 
